@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+/* --------------------------------------------------------------  */
+/* common  */
+svg {
+  filter: invert(1);
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -17,10 +23,9 @@ a {
   text-decoration: none;
   color: #deded7;
 }
-/* --------------------------------------------------------------  */
-/* common  */
-svg {
-  filter: invert(1);
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* --------------------------------------------------------------  */
@@ -88,12 +93,15 @@ svg {
   top: 50%;
 }
 
-/* --------------------------------------------------------------  */
-/* debug  */
-.debug {
-  background-color: blue;
+.arrow-dimensions {
+  font-size: 60px;
+  color: #7f7f7f;
 }
-/* fine debug  */
+
+.arrow-dimensions:hover {
+  color: #2ebaff;
+}
+/*arrow fine */
 /* --------------------------------------------------------------  */
 
 /* --------------------------------------------------------------  */
@@ -128,8 +136,9 @@ svg {
   object-fit: cover;
 }
 
-.mute::before {
-  content: url(../img/micro.png);
+#active {
+  border: 3px solid greenyellow;
+  z-index: 4;
 }
 
 /* fine container  */
@@ -142,12 +151,68 @@ svg {
   bottom: 0;
   display: flex;
   width: 100vw;
-  height: 5%;
   justify-content: space-between;
+  align-items: center;
   background-color: #212324;
 }
 
-.height {
-  height: 100%;
-  width: 30%;
+.mic-video,
+.manage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.mic-video {
+  padding-left: 10px;
+}
+
+.manage {
+  width: 50%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  font-size: 38px;
+  color: #dcdcdc;
+}
+.chevron {
+  display: inline-block;
+  color: #dcdcdc;
+  margin-right: 20px;
+}
+
+.end-meeting {
+  background-color: #4a4b4d;
+  padding: 30px 20px;
+}
+
+.end-meeting a {
+  color: #f7564c;
+}
+
+.partecipants {
+  position: relative;
+}
+
+.partecipants #elevato {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.share {
+  display: inline-block;
+}
+
+.green {
+  color: green;
+}
+/* --------------------------------------------------------------  */
