@@ -71,7 +71,8 @@ body {
 
 /* --------------------------------------------------------------  */
 /*arrow  */
-.arrow {
+.right,
+.left {
   font-size: 1.5em;
   color: white;
   z-index: 3;
@@ -179,8 +180,9 @@ body {
 }
 
 .icons {
-  font-size: 38px;
+  font-size: 28px;
   color: #dcdcdc;
+  margin-bottom: 5px;
 }
 .chevron {
   display: inline-block;
