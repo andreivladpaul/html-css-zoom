@@ -117,8 +117,8 @@ body {
 
 .foto {
   position: relative;
-  width: calc(100% / 5 - 25px);
-  height: calc(100% / 5);
+  width: calc(100% / 5 - 5px);
+  height: calc(100% / 5 - 5px);
   margin: 0 5px 5px 0;
 }
 
